@@ -1,0 +1,24 @@
+version: "2"
+
+linters:
+  default: none
+  enable:
+    - loglint
+  settings:
+    custom:
+      loglint:
+        type: goplugin
+        path: ./bin/loglint.so
+        description: Checks log messages in slog/zap
+        original-url: github.com/makarkudryavtsev/selectel-linter
+        settings:
+          rules:
+            lowercase: true
+            english: true
+            special-symbols: true
+            sensitive-data: true
+          sensitive-keywords:
+            - password
+            - token
+          sensitive-patterns:
+            - '(?i)ssn\\s*[:=]'

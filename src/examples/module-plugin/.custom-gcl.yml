@@ -1,0 +1,5 @@
+version: v2.5.0
+plugins:
+  - module: 'github.com/makarkudryavtsev/selectel-linter'
+    import: 'github.com/makarkudryavtsev/selectel-linter/moduleplugin'
+    version: latest
