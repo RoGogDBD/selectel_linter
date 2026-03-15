@@ -6,6 +6,8 @@ type Logger struct{}
 
 type SugaredLogger struct{}
 
+func String(key, val string) Field { return Field{} }
+
 func (l *Logger) Debug(msg string, fields ...Field)  {}
 func (l *Logger) Info(msg string, fields ...Field)   {}
 func (l *Logger) Warn(msg string, fields ...Field)   {}

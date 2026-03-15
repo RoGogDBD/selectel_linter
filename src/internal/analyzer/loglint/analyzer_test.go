@@ -11,6 +11,7 @@ func TestAnalyzer(t *testing.T) {
 	testData := analysistest.TestData()
 	cases := []string{
 		"a",
+		"contexts",
 		"lowercase",
 		"english",
 		"symbols",
